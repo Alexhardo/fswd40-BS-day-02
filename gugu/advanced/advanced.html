@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='mycss/advanced.css'/>
@@ -15,20 +19,30 @@
 <body>
     <div class="container-fluid">
         
-            <ul id="topNav" class="nav nav-pills">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" >Year
-                    <span class="caret"></span> 
-                    </a>
-                    <ul class="dropdown-menu">
-                    	<li>2011 South Korea</li></ul>
-                 </li>
-
-                <li >&nbsp; Actors</li>
-                <li >&nbsp; Content</li>
-                
-            </ul>
-        <div class="row"> 
+        <div id="topNav" >
+         <ul class="nav nav-pills">	
+         <li class="dropdown">	
+         <button class="dropdown-toggle" type="button" id="filmYear" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         Year
+         
+         </button>
+          <div class="dropdown-menu" aria-labelledby="filmYear">
+          <p class="dropdown-item">2011 South Korea</p>
+         </div>
+         </li>
+         <li>
+         <button>Content</button>
+         </li>
+         <li class="dropdown">
+         <button class="dropdown-toggle" id="filmActors" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Actors</button>
+        
+         <div class="dropdown-menu" aria-labelledby="filmActors">
+           <p><a href="https://en.wikipedia.org/wiki/Jung_Eun-pyo">Kang Eun-pyo</a></p>
+           <p><a href="https://en.wikipedia.org/wiki/Lee_Soo-hyuk">Kim Soo-hyeok</a></p>
+         </div>	
+         </li>
+         </ul>
+        </div>      
         <div class="col-lg-3">   
         <ul class="nav nav-pills nav-stacked">
             <li>just 1</li>
